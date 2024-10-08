@@ -26,10 +26,8 @@
 // a ⊕ b = 912 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 912 이므로 912를 return 합니다.
 
 function solution(a, b) {
-  let answerPlus = 0;
-  answerPlus = Number(String(a) + String(b));
-
-  let answerMultiple = 2 * a * b;
+  const answerPlus = Number(String(a) + String(b));
+  const answerMultiple = 2 * a * b;
 
   if (answerPlus > answerMultiple) {
     return answerPlus;
